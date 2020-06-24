@@ -290,10 +290,7 @@ module.exports = function(webpackEnv) {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
-        '../../theme.config': path.resolve(__dirname, '../src/theme/theme.config'),
-        '../../themes/default': path.resolve(__dirname, '../node_modules/semantic-ui-less/themes/default'),
-        '@theme': path.resolve(__dirname, '../src/theme'),
-        './theme.less': path.resolve(__dirname, '../node_modules/semantic-ui-less/theme.less'),
+        '../../theme.config$': path.resolve(__dirname, '../src/theme/theme.config'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
