@@ -87,7 +87,7 @@
   },
   "devDependencies": {
     "less": "^3.10.3",
-    "less-loader": "6.1.2"
+    "less-loader": "6.1.1"
   },
   "jest": {
     "roots": [
