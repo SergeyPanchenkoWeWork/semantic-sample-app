@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@3.0.0
+
+jobs:
+  build:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+          include-branch-in-cache-key: false
+      - run: yarn build
+
+workflows:
+  wf:
+    jobs:
+      - build
